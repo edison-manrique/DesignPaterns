@@ -1,34 +1,74 @@
-// Definimos una clase base
-class Animal {
-    constructor(name, age) {
-      this.name = name;
-      this.age = age;
+/***
+
+Imaginemos que estamos construyendo una aplicación de clonación de vehículos. 
+Queremos tener un código que nos permita clonar vehículos existentes de manera eficiente, 
+en lugar de crear nuevas instancias desde cero.
+
+Aquí es donde el patrón Prototype puede ser útil. 
+Podemos utilizar el patrón Prototype para definir un prototipo base de vehículo y luego clonar 
+ese prototipo para crear nuevas instancias con propiedades idénticas.
+
+*/
+
+// Comencemos definiendo nuestra clase base Vehicle que representa un vehículo:
+
+class Vehicle {
+    constructor() {
+      this.make = "";
+      this.model = "";
     }
   
-    // Método común para todos los animales
-    eat() {
-      console.log(`${this.name} is eating.`);
+    clone() {
+      throw new Error("El método clone() debe ser implementado por las subclases.");
+    }
+  
+    getInfo() {
+      return `Vehículo: ${this.make} ${this.model}`;
+    }
+  }
+
+  // A continuación, definimos nuestras clases concretas que extienden la clase base Vehicle:
+
+  class Car extends Vehicle {
+    constructor(make, model) {
+      super();
+      this.make = make;
+      this.model = model;
+    }
+  
+    clone() {
+      return Object.create(this);
     }
   }
   
-  // Creamos una instancia de Animal
-  const animal = new Animal("Lion", 5);
-  animal.eat(); // Output: Lion is eating.
-  
-  // Creamos una subclase usando el patrón de prototipo
-  class Lion extends Animal {
-    constructor(name, age, color) {
-      super(name, age);
-      this.color = color;
+  class Motorcycle extends Vehicle {
+    constructor(make, model) {
+      super();
+      this.make = make;
+      this.model = model;
     }
   
-    // Método específico para los leones
-    roar() {
-      console.log(`${this.name} is roaring.`);
+    clone() {
+      return Object.create(this);
     }
   }
-  
-  // Creamos una instancia de Lion
-  const lion = new Lion("Simba", 3, "golden");
-  lion.eat(); // Output: Simba is eating.
-  lion.roar(); // Output: Simba is roaring.
+
+  // Ahora podemos utilizar el patrón Prototype para clonar vehículos existentes:
+
+  const carPrototype = new Car("Toyota", "Corolla");
+const clonedCar = carPrototype.clone();
+
+console.log(clonedCar.getInfo()); // Vehículo: Toyota Corolla
+
+const motorcyclePrototype = new Motorcycle("Honda", "CBR500R");
+const clonedMotorcycle = motorcyclePrototype.clone();
+
+console.log(clonedMotorcycle.getInfo()); // Vehículo: Honda CBR500R
+
+/***
+
+En este ejemplo, el patrón Prototype nos permite clonar vehículos existentes utilizando el método clone(). 
+Cada instancia clonada tiene las mismas propiedades que el prototipo original, lo que nos permite crear 
+nuevos vehículos de manera eficiente.
+
+*/
