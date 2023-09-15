@@ -1,11 +1,11 @@
 /***
 
-    Supongamos que tenemos una calculadora antigua que solo puede sumar y restar números enteros. 
-    Sin embargo, queremos utilizarla en nuestro código moderno que necesita realizar operaciones 
-    más complejas, como multiplicación y división, y trabajar con números decimales.
+Supongamos que tenemos una calculadora antigua que solo puede sumar y restar números enteros. 
+Sin embargo, queremos utilizarla en nuestro código moderno que necesita realizar operaciones 
+más complejas, como multiplicación y división, y trabajar con números decimales.
 
-    Para resolver esto, podemos crear un adaptador que envuelva la calculadora antigua 
-    y proporcione una interfaz compatible con nuestras necesidades actuales.
+Para resolver esto, podemos crear un adaptador que envuelva la calculadora antigua 
+y proporcione una interfaz compatible con nuestras necesidades actuales.
 
 */
 
@@ -54,13 +54,13 @@ console.log(calculadora.dividir(10, 2)); // Output: 5
 
 /***
 
-    En este ejemplo, creamos una clase CalculadoraAntigua que representa la calculadora 
-    antigua con sus métodos sumar y restar. 
-    Luego, creamos la clase CalculadoraAdapter que envuelve la calculadora antigua 
-    y proporciona métodos adicionales como multiplicar y dividir utilizando la funcionalidad 
-    existente de la calculadora antigua.
+En este ejemplo, creamos una clase CalculadoraAntigua que representa la calculadora 
+antigua con sus métodos sumar y restar. 
+Luego, creamos la clase CalculadoraAdapter que envuelve la calculadora antigua 
+y proporciona métodos adicionales como multiplicar y dividir utilizando la funcionalidad 
+existente de la calculadora antigua.
 
-    Finalmente, creamos una instancia de CalculadoraAdapter y utilizamos los métodos multiplicar 
-    y dividir para realizar operaciones más complejas, como multiplicación y división.
+Finalmente, creamos una instancia de CalculadoraAdapter y utilizamos los métodos multiplicar 
+y dividir para realizar operaciones más complejas, como multiplicación y división.
 
 */

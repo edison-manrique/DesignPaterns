@@ -1,12 +1,12 @@
 /***
 
-    Imaginemos que estamos construyendo una aplicación de reproducción de videos en línea. 
-    Tenemos una clase Video que representa un video y queremos agregar una funcionalidad adicional 
-    al reproducir los videos, como el control de acceso o el registro de reproducciones.
+Imaginemos que estamos construyendo una aplicación de reproducción de videos en línea. 
+Tenemos una clase Video que representa un video y queremos agregar una funcionalidad adicional 
+al reproducir los videos, como el control de acceso o el registro de reproducciones.
 
-    Aquí es donde el patrón Proxy puede ser útil. 
-    Podemos utilizar el patrón Proxy para envolver la clase Video y agregar la funcionalidad 
-    adicional sin modificar la clase base.
+Aquí es donde el patrón Proxy puede ser útil. 
+Podemos utilizar el patrón Proxy para envolver la clase Video y agregar la funcionalidad 
+adicional sin modificar la clase base.
 
 */
 
@@ -66,9 +66,9 @@ console.log(videoProxy.getViews()); // 2
 
 /***
 
-        En este ejemplo, el patrón Proxy nos permite agregar funcionalidad adicional 
-        al reproducir videos sin modificar la clase base Video. 
-        El Proxy VideoProxy envuelve la clase Video y agrega la funcionalidad 
-        de control de acceso y registro de reproducciones.
+En este ejemplo, el patrón Proxy nos permite agregar funcionalidad adicional 
+al reproducir videos sin modificar la clase base Video. 
+El Proxy VideoProxy envuelve la clase Video y agrega la funcionalidad 
+de control de acceso y registro de reproducciones.
 
 */

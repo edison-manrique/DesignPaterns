@@ -1,13 +1,13 @@
 /***
 
-    Imaginemos que estamos construyendo una aplicación de creación de perfiles de usuario. 
-    Tenemos una clase base UserProfile que representa un perfil de usuario básico. 
-    Queremos poder agregar funcionalidades adicionales a los perfiles de usuario, 
-    como la capacidad de agregar una foto de perfil o la capacidad de agregar una descripción personalizada.
+Imaginemos que estamos construyendo una aplicación de creación de perfiles de usuario. 
+Tenemos una clase base UserProfile que representa un perfil de usuario básico. 
+Queremos poder agregar funcionalidades adicionales a los perfiles de usuario, 
+como la capacidad de agregar una foto de perfil o la capacidad de agregar una descripción personalizada.
 
-    Aquí es donde el patrón Decorator puede ser útil. 
-    Podemos utilizar el patrón Decorator para agregar funcionalidades adicionales 
-    a los perfiles de usuario sin modificar la clase base.
+Aquí es donde el patrón Decorator puede ser útil. 
+Podemos utilizar el patrón Decorator para agregar funcionalidades adicionales 
+a los perfiles de usuario sin modificar la clase base.
 
 */
 
@@ -65,8 +65,8 @@ console.log(profileWithDescription.getProfile()); // Perfil de usuario: JohnDoe,
 
 /***
 
-    En este ejemplo, el patrón Decorator nos permite agregar funcionalidades adicionales a los perfiles de usuario 
-    sin modificar la clase base UserProfile. Los decoradores ProfilePhotoDecorator y CustomDescriptionDecorator 
-    envuelven la clase base y agregan la funcionalidad adicional deseada.
+En este ejemplo, el patrón Decorator nos permite agregar funcionalidades adicionales a los perfiles de usuario 
+sin modificar la clase base UserProfile. Los decoradores ProfilePhotoDecorator y CustomDescriptionDecorator 
+envuelven la clase base y agregan la funcionalidad adicional deseada.
 
 */

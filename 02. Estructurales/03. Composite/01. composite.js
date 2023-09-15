@@ -1,13 +1,13 @@
 /***
 
-    Imaginemos que estamos construyendo una aplicación de gestión de tareas. 
-    Tenemos diferentes tipos de tareas, como tareas individuales y tareas compuestas 
-    que contienen sub-tareas. Queremos poder tratar tanto las tareas individuales como 
-    las tareas compuestas de la misma manera.
+Imaginemos que estamos construyendo una aplicación de gestión de tareas. 
+Tenemos diferentes tipos de tareas, como tareas individuales y tareas compuestas 
+que contienen sub-tareas. Queremos poder tratar tanto las tareas individuales como 
+las tareas compuestas de la misma manera.
 
-    Aquí es donde el patrón Composite puede ser útil. 
-    Podemos utilizar el patrón Composite para tratar tanto las tareas 
-    individuales como las tareas compuestas como objetos del mismo tipo.
+Aquí es donde el patrón Composite puede ser útil. 
+Podemos utilizar el patrón Composite para tratar tanto las tareas 
+individuales como las tareas compuestas como objetos del mismo tipo.
 
 */
 
@@ -70,9 +70,9 @@ compositeTask.complete();
 
 /***
 
-    En este ejemplo, el patrón Composite nos permite tratar tanto las tareas 
-    individuales como las tareas compuestas como objetos del mismo tipo. 
-    Esto nos permite tratar las tareas de manera uniforme, sin importar 
-    si son tareas individuales o tareas compuestas.
+En este ejemplo, el patrón Composite nos permite tratar tanto las tareas 
+individuales como las tareas compuestas como objetos del mismo tipo. 
+Esto nos permite tratar las tareas de manera uniforme, sin importar 
+si son tareas individuales o tareas compuestas.
 
 */

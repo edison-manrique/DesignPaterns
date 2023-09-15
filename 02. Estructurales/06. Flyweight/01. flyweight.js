@@ -1,12 +1,12 @@
 /***
 
-    Imaginemos que estamos construyendo una aplicación de edición de texto en la que los usuarios 
-    pueden resaltar diferentes partes del texto con diferentes colores. Sin embargo, algunos colores s
-    e utilizan con más frecuencia que otros.
+Imaginemos que estamos construyendo una aplicación de edición de texto en la que los usuarios 
+pueden resaltar diferentes partes del texto con diferentes colores. Sin embargo, algunos colores s
+e utilizan con más frecuencia que otros.
 
-    Aquí es donde el patrón Flyweight puede ser útil. Podemos utilizar el patrón Flyweight para compartir 
-    y reutilizar los objetos de color entre diferentes partes del texto, en lugar de crear un objeto de color 
-    nuevo para cada parte.
+Aquí es donde el patrón Flyweight puede ser útil. Podemos utilizar el patrón Flyweight para compartir 
+y reutilizar los objetos de color entre diferentes partes del texto, en lugar de crear un objeto de color 
+nuevo para cada parte.
 
 */
 
@@ -66,8 +66,8 @@ text3.highlight(); // "¡Hola de nuevo!" resaltado con el color rojo
 
 /***
 
-    En este ejemplo, el patrón Flyweight nos permite compartir y reutilizar los objetos de color entre diferentes partes del texto. 
-    En lugar de crear un objeto de color nuevo para cada parte, utilizamos el FlyweightFactory para obtener instancias compartidas 
-    de Color y las pasamos a cada objeto Text.
+En este ejemplo, el patrón Flyweight nos permite compartir y reutilizar los objetos de color entre diferentes partes del texto. 
+En lugar de crear un objeto de color nuevo para cada parte, utilizamos el FlyweightFactory para obtener instancias compartidas 
+de Color y las pasamos a cada objeto Text.
 
 */
