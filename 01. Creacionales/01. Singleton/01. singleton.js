@@ -34,23 +34,21 @@ class SingletonUserDatabase {
         if (!SingletonUserDatabase.instance) {
             SingletonUserDatabase.instance = new UserDatabase();
         }
-    }
-
-    getInstance() {
         return SingletonUserDatabase.instance;
     }
+
 }
 
 // Finalmente, podemos utilizar el patrón Singleton para acceder a la instancia única de UserDatabase 
 // desde cualquier parte de la aplicación:
 
-const userDatabaseInstance1 = new SingletonUserDatabase().getInstance();
-const userDatabaseInstance2 = new SingletonUserDatabase().getInstance();
+const userDatabaseInstance1 = new SingletonUserDatabase();
+const userDatabaseInstance2 = new SingletonUserDatabase();
 
 console.log(userDatabaseInstance1 === userDatabaseInstance2); // true
 
-userDatabaseInstance1.addUser("John");
-userDatabaseInstance2.addUser("Jane");
+userDatabaseInstance1.addUser("John"); // Usuario John agregado a la base de datos.
+userDatabaseInstance2.addUser("Jane"); // Usuario Jane agregado a la base de datos.
 
 console.log(userDatabaseInstance1.getUsers()); // ["John", "Jane"]
 console.log(userDatabaseInstance2.getUsers()); // ["John", "Jane"]

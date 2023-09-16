@@ -6,8 +6,8 @@ Cada tipo de producto tiene diferentes variantes, como diferentes marcas o tama�
 
 Aquí es donde el patrón Abstract Factory puede ser útil. 
 Podemos utilizar el patrón Abstract Factory para proporcionar una interfaz común para crear diferentes familias
- de productos relacionados, como alimentos, productos de limpieza y artículos de cuidado personal, 
- y luego implementar fábricas concretas para cada familia de productos.
+de productos relacionados, como alimentos, productos de limpieza y artículos de cuidado personal, 
+y luego implementar fábricas concretas para cada familia de productos.
 
 */
 

@@ -14,48 +14,48 @@ ese prototipo para crear nuevas instancias con propiedades idénticas.
 
 class Vehicle {
     constructor() {
-      this.make = "";
-      this.model = "";
+        this.make = "";
+        this.model = "";
     }
-  
+
     clone() {
-      throw new Error("El método clone() debe ser implementado por las subclases.");
+        throw new Error("El método clone() debe ser implementado por las subclases.");
     }
-  
+
     getInfo() {
-      return `Vehículo: ${this.make} ${this.model}`;
+        return `Vehículo: ${this.make} ${this.model}`;
     }
-  }
+}
 
-  // A continuación, definimos nuestras clases concretas que extienden la clase base Vehicle:
+// A continuación, definimos nuestras clases concretas que extienden la clase base Vehicle:
 
-  class Car extends Vehicle {
+class Car extends Vehicle {
     constructor(make, model) {
-      super();
-      this.make = make;
-      this.model = model;
+        super();
+        this.make = make;
+        this.model = model;
     }
-  
+
     clone() {
-      return Object.create(this);
+        return Object.create(this);
     }
-  }
-  
-  class Motorcycle extends Vehicle {
+}
+
+class Motorcycle extends Vehicle {
     constructor(make, model) {
-      super();
-      this.make = make;
-      this.model = model;
+        super();
+        this.make = make;
+        this.model = model;
     }
-  
+
     clone() {
-      return Object.create(this);
+        return Object.create(this);
     }
-  }
+}
 
-  // Ahora podemos utilizar el patrón Prototype para clonar vehículos existentes:
+// Ahora podemos utilizar el patrón Prototype para clonar vehículos existentes:
 
-  const carPrototype = new Car("Toyota", "Corolla");
+const carPrototype = new Car("Toyota", "Corolla");
 const clonedCar = carPrototype.clone();
 
 console.log(clonedCar.getInfo()); // Vehículo: Toyota Corolla
