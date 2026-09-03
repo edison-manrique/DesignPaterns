@@ -1,4 +1,3 @@
-```
 # Dependencies
 node_modules/
 
@@ -22,13 +21,18 @@ __pycache__/
 *.pyc
 *.pyo
 *.pyd
+*.py
 
 # TypeScript/Node.js
 *.tsbuildinfo
 .nyc_output
 coverage/
 .nyc_output/
-coverage/
+
+# JavaScript files (compiled from TypeScript) - DO NOT COMMIT
+**/*.js
+**/*.d.ts
+**/*.js.map
 
 # Temporary files
 *.tmp
@@ -46,7 +50,3 @@ yarn.lock
 
 # IDE specific
 .vs/
-*.swp
-*.swo
-
-```
