@@ -27,8 +27,8 @@ class Developer implements Employee {
   }
 }
 
-// Elemento concreto: Gerente
-class Manager implements Employee {
+// Elemento concreto: Gerente (renombrado para evitar conflictos)
+class ManagerEmployee implements Employee {
   public name: string;
   public salary: number;
 
@@ -50,7 +50,7 @@ class SalaryCalculator {
     this.totalSalary += developer.salary;
   }
 
-  visitManager(manager: Manager): void {
+  visitManager(manager: ManagerEmployee): void {
     this.totalSalary += manager.salary;
   }
 
@@ -62,7 +62,7 @@ class SalaryCalculator {
 // Uso del patrón Visitor
 const developer1: Employee = new Developer('Juan', 5000);
 const developer2: Employee = new Developer('María', 6000);
-const manager: Employee = new Manager('Pedro', 8000);
+const manager: Employee = new ManagerEmployee('Pedro', 8000);
 
 const salaryCalculator: SalaryCalculator = new SalaryCalculator();
 
@@ -78,3 +78,4 @@ salaryCalculator.getTotalSalary(); // El salario total de los empleados es: 1900
  * - Facilita añadir nuevas operaciones sin modificar clases
  * - Permite acumular estado durante la visita
  */
+export {};

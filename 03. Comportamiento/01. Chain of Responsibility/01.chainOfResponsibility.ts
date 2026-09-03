@@ -23,8 +23,8 @@ abstract class Approver {
   abstract processRequest(request: PurchaseRequest): void;
 }
 
-// Manejador concreto: Gerente
-class Manager extends Approver {
+// Manejador concreto: Gerente (renombrado para evitar conflictos)
+class ManagerApprover extends Approver {
   processRequest(request: PurchaseRequest): void {
     if (request.amount <= 1000) {
       console.log('La solicitud de compra ha sido aprobada por el gerente.');
@@ -61,7 +61,7 @@ class CEO extends Approver {
 }
 
 // Uso del patrón Chain of Responsibility
-const manager: Approver = new Manager();
+const manager: Approver = new ManagerApprover();
 const director: Approver = new Director();
 const ceo: Approver = new CEO();
 
@@ -83,3 +83,4 @@ manager.processRequest(request3); // La solicitud de compra no puede ser aprobad
  * - Facilita la adición de nuevos manejadores
  * - Permite configurar la cadena dinámicamente
  */
+export {};

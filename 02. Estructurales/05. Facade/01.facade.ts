@@ -15,8 +15,8 @@ class InventorySystem {
   }
 }
 
-// Subsistema: Carrito de compras
-class ShoppingCart {
+// Subsistema: Carrito de compras (renombrado para evitar conflictos)
+class ShoppingCartFacade {
   addItem(item: string): void {
     console.log(`Agregando ${item} al carrito de compras...`);
   }
@@ -37,7 +37,7 @@ class PaymentProcessor {
 // Fachada que simplifica la interfaz
 class PurchaseFacade {
   private inventorySystem: InventorySystem = new InventorySystem();
-  private shoppingCart: ShoppingCart = new ShoppingCart();
+  private shoppingCart: ShoppingCartFacade = new ShoppingCartFacade();
   private paymentProcessor: PaymentProcessor = new PaymentProcessor();
 
   purchaseItem(item: string, amount: number): void {
