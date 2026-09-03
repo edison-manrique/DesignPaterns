@@ -1,0 +1,52 @@
+# Dependencies
+node_modules/
+
+# Build artifacts
+dist/
+
+# Environment
+.env
+.env.local
+.env.*
+
+# Logs
+*.log
+
+# Editor/IDE
+.vscode/
+.idea/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.py
+
+# TypeScript/Node.js
+*.tsbuildinfo
+.nyc_output
+coverage/
+.nyc_output/
+
+# JavaScript files (compiled from TypeScript) - DO NOT COMMIT
+**/*.js
+**/*.d.ts
+**/*.js.map
+
+# Temporary files
+*.tmp
+*.temp
+*.swp
+*.swo
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Package manager
+package-lock.json
+yarn.lock
+
+# IDE specific
+.vs/
